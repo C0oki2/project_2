@@ -99,11 +99,11 @@ nav a:hover { background-color: #eee;}
 }
 
 
-/*배너 부분 반응형 배너 제작 */
+/*배너 부분 반응형 카드 세 개 - > 이거 서브 페이지에서 활용하기 메인에서 빼고 
 
 @media (max-width: 767px) {
     #wrap1 {
-        width: 100%;
+        width: 1000px;
         height: auto;
         margin: 0 auto;
         display: flex;
@@ -135,7 +135,7 @@ nav a:hover { background-color: #eee;}
         margin: 0 auto;
        
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
         overflow: hidden;
@@ -162,6 +162,8 @@ nav a:hover { background-color: #eee;}
     }
 
 }
+
+*/
 
 
 /*내게 맞는 신용카드를 찾아드려요!*/
@@ -586,4 +588,64 @@ nav a:hover { background-color: #eee;}
 
 #wrap6 h3 {
   font-size: 20px;
+}
+
+
+/*슬라이더 부분 아직 반응형 적용 안함*/
+#slidewrap {
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.slide {
+  width: 3000px;
+}
+
+.slide li {
+  width: 1000px;
+  height: 400px;
+  float: left;
+}
+
+.slide li img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+
+span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  font-size: 38px;
+  color: #fff;
+  line-height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+span:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 10px 10px 0px;
+  padding: 0 8px 0 2px;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0 2px 0 8px;
 }

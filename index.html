@@ -11,30 +11,6 @@
           @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
     </style>
 
-    <script>
-          
-        $(function() {
-            $('button:nth-of-type(1)').click(function() {
-                $("#div1").show();
-                $("#div2").hide();
-                $("#div3").hide();
-            });
-
-
-            $('button:nth-of-type(2)').click(function() {
-                $("#div2").show();
-                $("#div1").hide();
-                $("#div3").hide();
-            });
-
-
-            $('button:nth-of-type(3)').click(function() {
-                $("#div3").show();
-                $("#div1").hide();
-                $("#div2").hide();
-            });
-        });
-    </script>
 
 </head>
 
@@ -59,35 +35,66 @@
         </nav>
     </header>
 
-    <!--카드 세 개 배너-->
-    <div id = "wrap1">
-        
-        <a href = "#" class = "box">
-            <div class = "photo" style = "background-image: url(img/black_card.png);"></div>
-            <br>
-            <h3>신한 #pay 카드</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
+    
+<!--내비게이션 부분-->
+<script>
+      
+    $(function() {
+        $('button:nth-of-type(1)').click(function() {
+            $("#div1").show();
+            $("#div2").hide();
+            $("#div3").hide();
+        });
 
-        <a href = "#" class = "box">
-            <div class = "photo" style = "background-image: url(img/red_card.png);"></div>
-            <br>
-            <h3>Mr.Life 카드</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
 
-        <a href = "#" class = "box" >
-            <div class = "photo" style = "background-image: url(img/green_card.png);"></div>
-            <br>
-            <h3>NHCard vacation</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
+        $('button:nth-of-type(2)').click(function() {
+            $("#div2").show();
+            $("#div1").hide();
+            $("#div3").hide();
+        });
+
+
+        $('button:nth-of-type(3)').click(function() {
+            $("#div3").show();
+            $("#div1").hide();
+            $("#div2").hide();
+        });
+    });
+    
+</script>
+
+
+    <!--슬라이더-->
+    <div id = "slidewrap">
+        <ul class = "slide">
+            <li><img src ="img/slide1.JPG" alt = ""></li>
+            <li><img src ="img/slide2.JPG" alt = ""></li>
+            <li><img src ="img/slide3.JPG" alt = ""></li>
+        </ul>
+
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
 
     </div>
 
+    <!--슬라이더 부분 자바스크립트-->
+    <script>
+       
+        $('.prev').click(function(){
+        $('.slide li:last').prependTo('.slide');
+        $('.slide').css('margin-left',-1000);
+        $('.slide').stop().animate({marginLeft:0},800);});
+      
+        $('.next').click(function(){
+          $('.slide').stop().animate({marginLeft:-1000},800, function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0}); });
+         });
+    </script>
 
-       <!--뱅크 샐러드의 장점-->
-       <div>
+
+    <!--뱅크 샐러드의 장점-->
+    <div>
         <p style="text-align: center; color: #333; margin-top: 100px; font-size: 20px;">내게 맞는 금융상품, 비교하기 힘드시죠?</p>
         <h2 style="text-align: center; font-size: 30px; margin-bottom: 50px;">뱅크샐러드는 쉽고 정확하게 비교합니다.</h2>
         <br>
@@ -117,8 +124,7 @@
     
     </div>
     
-       </div>  
-
+    </div>  
 
     <!--내게 맞는 신용카드 찾아드려요-->
     <div id = "wrap2">
@@ -145,8 +151,7 @@
          </div>
 
     </div>
-
-
+    
     <!--기사 슬라이스-->
     <div id="wrap3">
 
@@ -266,6 +271,40 @@
 
 
     </div>
+
+ 
+
+    <!--카드 세 개 배너 -> 이거 메인 페이지 말고 서브 페이지에서 활용하기
+    <div id = "wrap1">
+        
+        <a href = "#" class = "box">
+            <div class = "photo" style = "background-image: url(img/black_card.png);"></div>
+            <br>
+            <h3>신한 #pay 카드</h3>
+        <p>다양한 혜택을 직접 확인해 보세요.</p>
+        </a>
+
+        <a href = "#" class = "box">
+            <div class = "photo" style = "background-image: url(img/red_card.png);"></div>
+            <br>
+            <h3>Mr.Life 카드</h3>
+        <p>다양한 혜택을 직접 확인해 보세요.</p>
+        </a>
+
+        <a href = "#" class = "box" >
+            <div class = "photo" style = "background-image: url(img/green_card.png);"></div>
+            <br>
+            <h3>NHCard vacation</h3>
+        <p>다양한 혜택을 직접 확인해 보세요.</p>
+        </a>
+
+    </div> -->
+
+  
+
+
+  
+
 
     <!--footer 부분-->
     <div id="wrap5">
