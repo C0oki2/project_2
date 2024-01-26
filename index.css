@@ -18,10 +18,12 @@ ul,ol,li,a {
 .photo:hover { opacity: 0.8;}
 
 header {
-    width: 100%;
+    width: 1000px;
     background-color: #f2f1e4;
     height: auto;
-    overflow: hidden;}
+    overflow: hidden;
+    margin: 0 auto;
+     justify-content: space-between;}
 
 nav a:hover { background-color: #eee;}
 .a { cursor: pointer; }
@@ -228,6 +230,7 @@ nav a:hover { background-color: #eee;}
     
     #j {
         background-image: url(img/jeonse-house.png);
+        background-repeat: no-repeat;
         width: 300px;
         height: 300px;
         float: right;
@@ -358,18 +361,18 @@ nav a:hover { background-color: #eee;}
    
        ul, ol, li { list-style: none; margin: 0; padding: 0;}
    
-       #wrap3 {width: 1000px; height: 1300px; margin: 0 auto; }
+       #wrap3 {width: 1000px; height: 1200px; margin: 0 auto; }
    
        #wrap3 h2 { font-size: 30px; padding: 10px; margin-top: 20px;}
        
      
-       #div1 {width: 90%; height: 1300px; text-align: left;}
-       #div2 {width: 90%; height: 1300px; text-align: left; display: none;}
-       #div3 { width: 90%; height: 1300px; text-align: left; display: none;}
+       #div1 {width: 90%; height: 1200px; text-align: left;}
+       #div2 {width: 90%; height: 1200px; text-align: left; display: none;}
+       #div3 { width: 90%; height: 1200px; text-align: left; display: none;}
      
        #wrap3 img { width: 100%; height: 500px; border-radius: 20px;}
      
-       .textbox {width: 90%; height: 300px; background-color: #f2f1e4; margin: 30px 0 0 30px; font-size: 18px; line-height: 40px; color: #666;}
+       .textbox {width: 95%; height: 300px; background-color: #f2f1e4; margin: 30px 0 0 30px; font-size: 18px; line-height: 35px; color: #666;}
    
        #button_1 {
            width: 100%;
@@ -545,12 +548,13 @@ nav a:hover { background-color: #eee;}
 /*footer 부분 아직 반응형 적용 안 함 */
 #wrap6 {
 
-  width: 100%;
-  height: 700px;
+  width: 1000px;
+  height: 600px;
   background-color: #f2f1e4;
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   flex-wrap: nowrap;
+  margin: 0 auto;
 }
 
 #wrap6 > div {
@@ -648,4 +652,72 @@ span:hover {
   right: 0;
   border-radius: 10px 0px 0px 10px;
   padding: 0 2px 0 8px;
+}
+
+/*footer2 부분 아직 반응형 적용 안 함*/
+
+
+#footer2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  align-items: center;}
+
+#wrap8 {
+  
+   height: 100px;
+   background-color: #f2f1e4;
+
+}
+
+/*메인 페이지의 맨 마지막 부분 아직 반응형 적용 안 함*/
+
+#wrap9 {
+  width: 100%;
+  height: 250px;
+  background-color: #f2f1e4;
+ }
+
+ #main_last {
+  width: 1000px;
+display: flex;
+padding: 30px 0px 0px 0px;
+color: #666;
+margin: 0 auto;
+ }
+
+
+
+/*다운로드 안드로이드, 애플 권유 부분 큰 폰 사진 있는 부분  -> 아직 반응형 적용 안 함 */
+
+ #wrap9-1 {
+  width: 100%;
+  height: 600px;
+  background-image: url('https://cdn.banksalad.com/app/banksalad-web/landing-app-ad-banner-pc.png');
+  background-position: 15% 10%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#award {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+#wrap9-1 img {
+  width: 210px;
+  height: 60px;
+}
+
+#wrap9-1 > div {
+  margin: 15px 0px 0px 0px;
+
 }
