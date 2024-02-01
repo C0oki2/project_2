@@ -4,27 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banksandwich</title>
-    <script src ="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="미디어쿼리.css">
+    <!-- <link rel="stylesheet" href="미디어쿼리.css"> -->
+       <meta charset="utf-8">
 
-    <style>
-          @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
-    </style>
 
-<script>
-
-    $(function(){
-    
-    $(".a").click(function(){
-    
-    $(".b").slideToggle();
-    
-    });
-    
-    });
-    
- </script>
 
 
 </head>
@@ -35,36 +20,43 @@
 
     <!--헤더 반응형 내비게이션-->
     <header>
-        <div class = "logo" style="font-size: 25px; display: flex;">
-            <img src = "img/sandwich.png" alt = "banksandwich"
-            style="width: 40px; height: 40px;">
-            <p style="color:#272727; margin-left: 5px;">banksandwich</p></div>
-          
-        <img src = "img/i.png" class="a">
-        
-        <nav class = "b">
+        <div class="logo" style="font-size: 27px; font-weight: bold";><img src = "img/sandwich.png" alt = "logo" style="vertical-align: middle; width: 13%; padding-bottom: 10px; margin-right: 5px;">banksandwich</div>
+        <img src ="img/i.png" class="a">
+
+        <nav class="b" style="z-index: 10; background-color: #ffffff;">
             <ul>
-                <li><a href="#">신용카드</a></li>
-                <li><a href="#">신용대출</a></li>
-                <li><a href="#">대환대출</a></li>
+                <li><a href ="#">신용카드</a></li>
+                <li><a href= "#">신용대출</a></li>
+                <li><a href= "#">대환대출</a></li>
                 <li><a href="#">주택담보대출</a></li>
-                <li><a href="#">전세자금대출</a></li>
-                <li><a href="#">대출금리쿠폰</a></li>
+                <li><a href ="#">전세자금대출</a></li>
+                <li><a href= "#">대출금리쿠폰</a></li>
             </ul>
         </nav>
+
     </header>
 
-  
-     
-
-
+    <script>
+        $(function(){
+            $(".a").click (function(){
+                $(".b").slideToggle();
+                
+            });
+        });
+    </script>
+    
+    
 
     <!--슬라이더-->
     <div id = "slidewrap">
         <ul class = "slide">
-            <li><img src ="img/slide1.JPG" alt = "slider3"></li>
-            <li><img src ="img/slide2.JPG" alt = "slider2"></li>
-            <li><img src ="img/slide3.JPG" alt = "slider3" ></li>
+            <li><img src ="img/slide1.JPG" alt = "slider1"><span id = "slider1_text">금융을 내 편으로 <br>
+                뱅크샌드위치
+                </span></li>
+            <li><img src ="img/slide2.JPG" alt = "slider2"><span id = "slider2_text" >대출 앞에 작아질 때!<br>
+                뱅크샌드위치 금융매칭<br></span></li>
+            <li><img src ="img/slide3.JPG" alt = "slider3" ><span id = "slider3_text">30만원 상당의 검사를 무료로<br>
+                오직 뱅크샌드위치에서</span></li>
         </ul>
 
         <span class="prev">&lt;</span>
@@ -73,8 +65,21 @@
     </div>
 
     <!--슬라이더 부분 자바스크립트-->
-    <script>     
+    <script>    
+    if (window.matchMedia("(max-width: 999px)").matches) { 
+
         $('.prev').click(function(){
+        $('.slide li:last').prependTo('.slide');
+        $('.slide').css('margin-left','-100%');
+        $('.slide').stop().animate({marginLeft:0},800);});
+      
+        $('.next').click(function(){
+          $('.slide').stop().animate({marginLeft:'-100%'},800, function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0}); });
+         });
+}else {
+    $('.prev').click(function(){
         $('.slide li:last').prependTo('.slide');
         $('.slide').css('margin-left',-1000);
         $('.slide').stop().animate({marginLeft:0},800);});
@@ -84,6 +89,10 @@
             $('.slide li:first').appendTo('.slide');
             $('.slide').css({marginLeft:0}); });
          });
+
+}
+
+      
     </script>
 
     <!--자주 사용하는 노란 메뉴 정렬-->
