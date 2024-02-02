@@ -6,8 +6,8 @@
     <title>banksandwich</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index_old.css">
-       <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="index_old.css"> -->
+    <meta charset="utf-8">
 
 
 
@@ -175,27 +175,17 @@
     <!--기사 슬라이스-->
     <div id="wrap4">
     
-        <div id="article_b">
-            <table>
-                <tr>
-                    <td td colspan="2"><b>새소식 </b><p style="display: inline; float: right;"><b>작성일</b></p></button></td>
+        <div id="article_b">  
+           
+        <button type="button" ><img src = "img/news1.jpg" alt = "news1"><p>2023년 부동산 규제 총 정리<br> 바로 확인하기</p></button>
+                          
+        <button type="button" class="po1"><img src = "img/news2.jpg" alt = "news1"><p>특례보금자리론<br> 바로 확인하기</p></button>
                 
-                </tr>
-                <tr>
-                        <td td colspan="2"><button type="button" >23년 부동산 규제 총정리 <p style="display: inline; float: right;">2023.08.29</p></button></td>
-                    
-                </tr>
-                <tr>
-                    <td td colspan="2"><button type="button" class="po1">특례보금자리론, 23년 부동산 최고의 대출! <p style="display: inline; float: right;">2023.08.29</p></button></td>
-                </tr>
-                <tr>
-                    <td td colspan="2"><button type="button" >신용카드 해지하면 신용등급 떨어질까? 카드해지 방법과 궁금증 <p style="display: inline; float: right;">2023.08.30</p></button></td>
-                </tr>
-            </table>
-       
+        <button type="button" ><img src = "img/news1.jpg" alt = "news1"><p>카드해지 방법과 궁금증 <br> 바로 확인하기</p> </button>
+                   
+        <p style="font-size:40px; text-align: center; margin: 30px 0px 0px 20px; font-weight: bold;"> 뱅크 샌드위치가 건내는 <br>
+         최신 알뜰 정보</p>
         </div>
-
-
 
         <div id="div1">
             <h2>23년 부동산 규제 총정리</h2>
@@ -205,7 +195,7 @@
              <p style="font-size: 13px; color: #848484;">뱅크샌드위치
                 마지막 수정 2023.08.29</p>
             <br>
-            <img src="img/e3.jpg" alt="세종대왕">
+            <img src="img/e3.jpg" alt="세종대왕" id = "article_picture">
             <div class="textbox">
   
              
@@ -231,7 +221,7 @@
             <p style="font-size: 13px; color: #848484;">뱅크샌드위치
                 마지막 수정 2023.08.29</p>
             <br>
-            <img src="img/e2.jpg" alt="세종대왕">
+            <img src="img/e2.jpg" alt="세종대왕"  id = "article_picture">
             <div class="textbox">
   
                 <p>23년도 부동산 시장의 화제 ‘특례보금자리론’ 나왔습니다!  <br>
@@ -268,7 +258,7 @@
             <p style="font-size: 13px; color: #848484;">뱅크샌드위치
                 마지막 수정 2023.08.30</p>
             <br>
-            <img src="img/e1.jpg" alt="광개토 대왕">
+            <img src="img/e1.jpg" alt="광개토 대왕" id = "article_picture">
             <div class="textbox">
               
                 <p>
@@ -296,7 +286,7 @@
 <script>
       
     $(function() {
-        $("#article_b > table tr:eq(1)")
+        $("#article_b > button:first")
         .click(function() {
             $("#div1").show();
             $("#div2").hide();
@@ -304,14 +294,14 @@
         });
 
 
-        $("#article_b > table tr:eq(2)").click(function() {
+        $("#article_b > button:eq(1)").click(function() {
             $("#div2").show();
             $("#div1").hide();
             $("#div3").hide();
         });
 
 
-        $("#article_b > table tr:eq(3)").click(function() {
+        $("#article_b > button:last").click(function() {
             $("#div3").show();
             $("#div1").hide();
             $("#div2").hide();
@@ -349,7 +339,7 @@
 
 
 
-    <!--다운로드 안드로이드, 애플 권유 부분 큰 폰 사진 있는 부분  -> 아직 반응형 적용 안 함-->
+    <!--큰 폰 사진 있는 부분  -> 아직 반응형 적용 안 함-->
     <div id = wrap5>
 
 

@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
 
+
 * {margin:0; font-family: "맑은 고딕"; box-sizing: border-box; }
 
-ul,li,ol {list-style:none; margin:0; padding:0;}
+ul,ol,li,a {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #666;
+}
 
 header { background-color:#fff; height:auto;}
 
@@ -18,7 +25,7 @@ nav ul > li :hover {background-color: green;
 
 @media (max-width:999px){
 
-  header { width:100%; display:flex;  justify-content:space-between; align-items:center;  line-height:50px;}
+  header { width:100%; display:flex;  justify-content:space-between; align-items:center;  line-height:50px; padding: 10px 0px;}
 
   nav ul {display:flex; flex-direction:column; margin-top: -10px;}
 
@@ -31,11 +38,12 @@ nav ul > li :hover {background-color: green;
 
   }
 
-   @media (min-width:1000px){
+@media (min-width:1017px){
         
       header { display:flex; width: 1000px;
         margin: 0 auto; 
-        justify-content:space-between; align-items:center;  line-height:50px;}
+        justify-content:space-between; align-items:center;  line-height:50px;
+        padding: 20px 0px;}
 
       nav ul {display:flex; }
 
@@ -79,94 +87,9 @@ nav ul > li :hover {background-color: green;
   
   
   
-  .slide span {
-    position: absolute;
-    top: 30%;
-    display: block;
-    font-size: 38px;
-    color: #fff;
-    line-height: 57px;
-    background: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    height: 50px;
-    transform: translateY(-50%);
-  }
-  
-  .slide span:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: #000;
-  }
-  
-  .prev {
-    left: 0;
-    border-radius: 0 10px 10px 0px;
-    padding: 0 8px 0 2px;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 10px 0px 0px 10px;
-    padding: 0 2px 0 8px;
-  }
-
-  #slider1_text { 
-    font-size: 20px; color: #000;
-    background: none;
-    margin-left: 20%;
-    margin-top: 6%;
-    text-align: center;
-    font-weight: bold;
-    line-height: 30px;
-
-  }
-
-  #slider2_text, #slider3_text {
-    font-size: 20px; color: #000;
-    background: none;
-    margin-left: 11%;
-    margin-top: 6%;
-    text-align: center;
-    font-weight: bold;
-    line-height: 30px;
-
-
-    
-  }
-      
-}
-
-@media all and (min-width: 600px) and (max-width: 999px) { 
-  #slidewrap {
-    width: 1000px;
-    height: 400px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-  
-  }
-  
-  .slide {
-    width: 3000px;
-  }
-  
-  .slide li {
-    width: 1000px;
-    height: 400px;
-    float: left;
-  }
-  
-  .slide li img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-  }
-  
-  
-  
   span {
-    position: fixed;
-    top: 30%;
+    position: absolute;
+    top: 50%;
     display: block;
     font-size: 38px;
     color: #fff;
@@ -195,32 +118,118 @@ nav ul > li :hover {background-color: green;
   }
 
   #slider1_text { 
-    font-size: 40px; color: #000;
+    font-size: 20px; color: #000;
     background: none;
-    margin-left: 18%;
-    margin-top: -5%;
+    margin-left: 20%;
+    margin-top: -2%;
     text-align: center;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 30px;
 
   }
 
   #slider2_text, #slider3_text {
-    font-size: 40px; color: #000;
+    font-size: 20px; color: #000;
     background: none;
-    margin-left: 10%;
-    margin-top: -5%;
+    margin-left: 11%;
+    margin-top: -2%;
     text-align: center;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 30px;
 
 
     
   }
+      
+}
+
+@media all and (min-width: 600px) and (max-width: 999px) { 
+  
+  #slidewrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
   
   }
+  
+  .slide {
+    width: 300%;
+  }
+  
+  .slide li {
+    width: 33.3%;
+    height: auto;
+    float: left;
+    position: relative;
+  }
+  
+  .slide li img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+  span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-size: 38px;
+    color: #fff;
+    line-height: 57px;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+  }
+  
+  span:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 0 10px 10px 0px;
+    padding: 0 8px 0 2px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0 2px 0 8px;
+  }
 
-@media all and (min-width: 1000px) {
+  #slider1_text { 
+    font-size: 35px; color: #000;
+    background: none;
+    margin-left: 17%;
+    margin-top: -1%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+
+  }
+
+  #slider2_text, #slider3_text {
+    font-size: 35px; color: #000;
+    background: none;
+    margin-left: 11%;
+    margin-top: -2%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+
+
+    
+  }
+
+  }
+
+@media all and (min-width: 1017px) {
 
     #slidewrap {
         width: 1000px;
@@ -346,11 +355,11 @@ nav ul > li :hover {background-color: green;
    
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
 
       
   #wrap1 {
-    width: 30%;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     margin-top: 4%;
@@ -360,12 +369,12 @@ nav ul > li :hover {background-color: green;
 }
 
 #often {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-content: center;
-    
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  
 }
 
 
@@ -459,7 +468,7 @@ nav ul > li :hover {background-color: green;
     
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
 
     #wrap2 { display: flex;
         justify-content: space-between;
@@ -487,7 +496,7 @@ nav ul > li :hover {background-color: green;
 
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1017px) {
 
 
 
@@ -515,9 +524,6 @@ nav ul > li :hover {background-color: green;
     
 
 }
-
-
-
 
 
 /*내게 맞는 신용카드 찾아드려요*/
@@ -549,7 +555,8 @@ nav ul > li :hover {background-color: green;
     
     
     #wrap3 > div > div > button {
-    
+        
+        width: 100%;
         height: 80px;
         background-color: #13bd7e;
         border-radius: 9px;
@@ -573,7 +580,7 @@ nav ul > li :hover {background-color: green;
     }
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
 
     #wrap3 {
         width:100%;
@@ -627,7 +634,7 @@ nav ul > li :hover {background-color: green;
     
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1017px) {
 
     #wrap3 {
         width:1000px;
@@ -686,9 +693,6 @@ nav ul > li :hover {background-color: green;
 }
 
 
-
-
-
 /*이순신 기사 슬라이스*/
 @media all and (max-width: 599px) {
  
@@ -697,11 +701,11 @@ nav ul > li :hover {background-color: green;
 #wrap4 h2 { font-size: 23px; padding: 6px; margin-top: 20px; color: #272727;}
 
 
-#div1 {width: 100%; height: 1200px; text-align: left; }
-#div2 {width: 100%; height: 1200px; text-align: left; display: none;}
-#div3 { width: 100%; height: 1200px; text-align: left; display: none;}
+#div1 {width: 100%; height: 1050px; text-align: left; }
+#div2 {width: 100%; height: 1050px; text-align: left; display: none;}
+#div3 { width: 100%; height: 1050px; text-align: left; display: none;}
 
-#wrap4 img { width: 100%; height: 400px; border-radius: 9px;}
+#wrap4 > #div1 #article_picture { width: 100%; height: 400px; border-radius: 9px;}
 
 .textbox {width: 100%; height: 300px; background-color: #ffffff; margin: 10px 0 0 0px; padding: 5%; font-size: 13px; line-height: 25px; color: #272727; font-weight: 200;}
 
@@ -711,38 +715,38 @@ nav ul > li :hover {background-color: green;
 #article_b  {
   margin-top: 100px;
   width: 1000px;
-  height: 150px;
+  height: 200px;
 }
 
+  #article_b >  img {
+    width: 150px;
+    border: none;
+    text-align: left;
+    background-color: #fff;
+
+  }
+
+  #article_b >  button {
+    width: auto;
+    border: none;
+    text-align: left;
+    background-color: #fff;
+    position: relative;
+
+  }
 
 
-#article_b > table {
-  width: 1000px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 9px;
-  color: #272727;
-  margin-top: 50px;
-
-}
+  #article_b > button > p {
+    position: absolute;
+    top: 0;
+  }
 
 
-#article_b table td { 
-  border-bottom:1.1px solid #e1e1e1;}
-
-  #article_b table td button:hover {
+  #article_b button:hover {
     background-color: #a6ffde; 
     padding: 0px 10px;
     border-radius: 9px;
   }
-
-#article_b > table button {
-  width: 100%;
-  border: none;
-  text-align: left;
-  background-color: #fff;
-
-}
 
 
 
@@ -824,16 +828,16 @@ color: #fff;
     
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 600px) and (max-width: 999px) {
  
  #wrap4 {width: 100%; height: auto; margin: 0 auto; }
 
 #wrap4 h2 { font-size: 25px; padding: 6px; margin-top: 20px; color: #272727;}
 
 
-#div1 {width: 100%; height: 1400px; text-align: left; }
-#div2 {width: 100%; height: 1400px; text-align: left; display: none;}
-#div3 { width: 100%; height: 1400px; text-align: left; display: none;}
+#div1 {width: 100%; height: 1300px; text-align: left; }
+#div2 {width: 100%; height: 1300px; text-align: left; display: none;}
+#div3 { width: 100%; height: 1300px; text-align: left; display: none;}
 
 #wrap4 img { width: 100%;  border-radius: 9px;}
 
@@ -844,14 +848,14 @@ color: #fff;
 
 #article_b  {
   margin-top: 100px;
-  width: 1000px;
+  width: 100%;
   height: 150px;
 }
 
 
 
 #article_b > table {
-  width: 1000px;
+  width: 100%;
   background-color: #fff;
   padding: 10px;
   border-radius: 9px;
@@ -966,52 +970,67 @@ color: #fff;
 #wrap4 h2 { font-size: 30px; padding: 10px; margin-top: 20px; color: #272727;}
 
 
+
 #div1 {width: 100%; height: 1300px; text-align: left; }
 #div2 {width: 100%; height: 1300px; text-align: left; display: none;}
 #div3 { width: 100%; height: 1300px; text-align: left; display: none;}
 
-#wrap4 img { width: 100%; height: 500px; border-radius: 20px;}
 
 .textbox {width: 97%; height: 300px; background-color: #ffffff; margin: 30px 0 0 15px; padding: 5px; font-size: 18px; line-height: 33px; color: #272727; font-weight: 200;}
+
+
+#article_picture { width: 1000px; height: 500px; border-radius: 9px;}
+
+.textbox {width: 100%; height: 300px; background-color: #ffffff; margin: 10px 0 0 0px; padding: 2%; font-size: 18px; line-height: 32px; color: #272727; font-weight: 200;}
 
 
 
 
 #article_b  {
-  margin-top: 100px;
+  margin: 80px 0px;
   width: 1000px;
-  height: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
+  #article_b >  img {
+    width: 150px;
+    border: none;
+    text-align: left;
+    background-color: #fff;
+ 
 
-
-#article_b > table {
-  width: 1000px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 9px;
-  color: #272727;
-  margin-top: 100px;
-
-}
-
-
-#article_b table td { 
-  border-bottom:1.1px solid #e1e1e1;}
-
-  #article_b table td button:hover {
-    background-color: #a6ffde; 
-    padding: 0px 10px;
-    border-radius: 9px;
   }
 
-#article_b > table button {
-  width: 100%;
-  border: none;
-  text-align: left;
-  background-color: #fff;
+  #article_b >  button {
+    width: 150px;
+    border: none;
+    text-align: left;
+    background-color: #fff;
+    position: relative;
+    border-radius: 9px;
+    margin-left: 20px;
 
-}
+  }
+
+
+  #article_b > button > p {
+    position: absolute;
+    top: 15%;
+    padding: 5%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+   #article_b button:hover {
+    opacity: 0.6;
+  } 
+
 
 
 
@@ -1094,96 +1113,133 @@ color: #fff;
 }
 
 
-
-
 /*큰 폰 사진 있는 부분*/
 @media all and (max-width: 599px) {
+
   
+     
+  #wrap5 {
+    width: 100%;
+   
+  
+    background-image: url('https://cdn.banksalad.com/app/banksalad-web/landing-app-ad-banner-pc.png');
+    background-position: 65% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+  }
+  
+  #award {
+    color: #fff;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+    padding: 5%;
 
-    #wrap5 {
-        width: 100%;
-        height: 800px;
-        background-color: #ffffff;
-        color: #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-      }
-
-      
-    #award {
-        color: #fff;
-        font-size: 15px;
-        line-height: 25px;
-        font-weight: 300;
-
-    }
-    
-    #wrap5 img {
-        /* width: 70%; */
-        /* height: 60px; */
-    }
-    
-    #wrap5 > div {
-        margin: 15px 0px 0px 0px;
-    
-    }
+  }
+  
+  #wrap5 img {
+    width: 20%;
+    /* height: 60px; */
+  }
+  
+  #wrap5 > div {
+    margin: -10px 0px 0px 20px;
+  
+  }
+  
 
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
 
-    
-    #wrap5 {
-        width: 100%;
-        height: 800px;
-        background-color: #ffffff;
-        color: #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+     
+  #wrap5 {
+    width: 100%;
+    height: 600px;
+   
+  
+    background-image: url('https://cdn.banksalad.com/app/banksalad-web/landing-app-ad-banner-pc.png');
+    background-position: 15% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;   
+  
+  }
+  
+  #award {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
 
-          
-    #award {
-        color: #fff;
-        font-size: 17px;
-        line-height: 25px;
-        font-weight: 300;
 
-    }
-    
-    #wrap5 img {
-        width: 210px;
-        height: 60px;
-      }
-    
-    #wrap5 > div {
-        margin: 15px 0px 0px 0px;
-    
-    }
-
+  }
+  
+  #wrap5 img {
+    width: 40%;
+    /* height: 60px; */
+  }
+  
+  #wrap5 > div {
+    margin: 15px 0px 0px 0px;
+    margin-right:-7%;
+  
+  }
+  
 
 }
 
 @media all and (min-width: 1000px) {
 
-    #wrap5 {
-        width: 100%;
-        height: 800px;
-        background-color: #ffffff;
-        color: #333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  #wrap5 {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://cdn.banksalad.com/app/banksalad-web/landing-app-ad-banner-pc.png');
+    background-position: 20% 10%;
+  
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  #award {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-right: 25%;
 
+  }
+  
+  #wrap5 img {
+    width: 210px;
+    height: 60px;
+    
+ 
+  }
+  
+  #wrap5 > div {
+    margin: 15px 0px 0px 0px;
+    margin-right: 26%;
+  
+  }
+  
     
 
 }
-
-
 
 
 /*큰 폰 사진 아래에 조그만한 문구*/
@@ -1203,7 +1259,7 @@ color: #fff;
 
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
     #wrap6 {
         width: 100%;
         height: 100px;
@@ -1217,7 +1273,7 @@ color: #fff;
 
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1017px) {
     #wrap6 {
         width: 100%;
         height: 100px;
@@ -1229,8 +1285,6 @@ color: #fff;
         font-size: 14px;
       }
 }
-
-
 
 
 /*footer1*/
@@ -1290,7 +1344,7 @@ color: #fff;
   
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
     #wrap7 {
   
         width: 100%;
@@ -1338,7 +1392,7 @@ color: #fff;
 
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1017px) {
     #wrap7 {
   
         width: 1000px;
@@ -1384,8 +1438,6 @@ color: #fff;
 
 }
 
-
-
 /*footer2, 일렬로 되어있음*/
 @media all and (max-width: 599px) {
       
@@ -1410,7 +1462,7 @@ color: #fff;
   
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
       
   #footer2 {
     display: flex;
@@ -1452,8 +1504,6 @@ color: #fff;
 }
 
 
-
-
 /*맨 마지막 부분*/
 @media all and (max-width: 599px) {
     #wrap9 {
@@ -1472,7 +1522,7 @@ color: #fff;
   
 }
 
-@media all and (min-width: 600px) {
+@media all and  (min-width: 600px) and (max-width: 999px) {
     #wrap9 {
         width: 100%;
         height: 250px;
@@ -1489,7 +1539,7 @@ color: #fff;
 
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1017px) {
     #wrap9 {
         width: 100%;
         height: 250px;
