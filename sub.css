@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
+
+* {padding:0; margin: 0;}
+ul, li, ol,a { list-style: none; text-decoration: none;}
+
+
+header { 
+    width: 1000px; height: 150px;
+    margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+    align-items: center;}
+
+header > ul {  display: flex; }
+
+
+header > ul > li {padding: 15px; font-size: 20px; font-weight: bold; color: #404040;}
+
+
+/*search 버튼*/
+/* #search_btn_div {
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_btn_div>button  {
+    width: 690px;
+    height: 60px;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid green;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    color: #666;
+}  
+
+#search_btn_div>button>div {
+    display: flex;
+    justify-content: space-between;
+}
+ */
+
+
+ #sub_wrap1 { 
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+   justify-content: space-between;
+padding: 10px 100px;}
+
+#sub_wrap1>div:nth-of-type(1) {
+    width: 400px;
+    height: 400px;
+    background-image: url(img/sub_card_background.jpg);
+
+}
+
+
+#sub_wrap1>div:nth-of-type(2) {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+
+}
+
+
+
+#sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #404040;
+}
+
+
+#sub_wrap1>div:nth-of-type(3) {
+    width: 100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#sub_wrap1>div:nth-of-type(3) img {
+    width: 30px;
+}
