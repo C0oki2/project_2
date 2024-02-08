@@ -14,7 +14,16 @@
 </head>
 
 <body style="overflow-x: hidden;">
+
+  
+ <div id = "fixed"> <p>회원가입하고 다양한 혜택을 만나 보세요</p></div>
+
+
     <header>
+        
+
+    
+
         <div id = "logo">
             <img src="img/banklogo.png">
         </div>
@@ -22,53 +31,58 @@
         <ul style="z-index: 10;">
             <li><a href ="#">신용카드</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">현대카드 </a></li>
+                    <li><a href ="#">신한카드</a></li>
+                    <li><a href ="#">국민카드</a></li>
                 </ul>
             </li>
 
             <li><a href= "#">신용대출</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">전체</a></li>
+                    <li><a href ="#">1금융권</a></li>
+                    <li><a href ="#">2금융권</a></li>
                 </ul>     
             </li>
 
 
             <li><a href= "#">대환대출</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">머니피드</a></li>
+                    <li><a href ="#">갈아타기</a></li>
+                    <li><a href ="#">검사하기</a></li>
                 </ul>
             </li>
 
             <li><a href="#">주택담보대출</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">감면 혜택</a></li>
+                    <li><a href ="#">대출 규제</a></li>
+                    <li><a href ="#">체크 포인트</a></li>
                 </ul>            
             </li>
 
             <li><a href ="#">전세자금대출</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">중소기업</a></li>
+                    <li><a href ="#">청년</a></li>
+                    <li><a href ="#">체크 포인트</a></li>
                 </ul>          
             </li>
 
             <li><a href= "#">대출금리쿠폰</a>
                 <ul class = "sub">
-                    <li><a href ="#">SUB1</a></li>
-                    <li><a href ="#">SUB2</a></li>
-                    <li><a href ="#">SUB3</a></li>
+                    <li><a href ="#">금리 할인</a></li>
+                    <li><a href ="#">전체 혜택</a></li>
+                    <li><a href ="#">기타</a></li>
                 </ul>           
             </li>
         </ul>
+
+        <div id = "menu_icons">
+            <img src = "img/ico-72-src1.png" alt = "1">
+            <img src = "img/h-menu-more.png" alt = "1">
+        </div>
     </header>
 
     <script>
@@ -94,17 +108,20 @@
 
     <!--카드 설명 부분-->
     <div id="sub_wrap1">
-        <div> <img src = "img/sub_card_1.gif" alt = "card" style="height:200px;  transform: rotate(90deg); margin: 20% 11%;">
+        <div> <img src = "img/sub_card_1.gif" alt = "card">
         </div>
 
         <div>
            
                 <div style="width: 400px; height: 150px;">
-                <p style="font-size: 40px; font-weight: bold; color: #3e3e3e;"> 신한카드 Deep Oil</p>
-                <p style="margin-top: 10px; font-size: 25px; font-weight: bolder; color: #2c2c2c;">  속 깊은 주유 혜택</p>
+                
+                <p> 신한카드 Deep Oil</p>
+                <p>  속 깊은 주유 혜택</p>
                 </div>
 
-                <div style="width: 300px; height: 200px; ">
+
+                
+                <div>
 
                     <div><img src = "img/ico_card_benefit_m_02.png" alt ="3"><p>직접고른 주유소 10% 할인</p></div>
                     
@@ -136,21 +153,21 @@
 
     <!--연회비-->
     <div id = "sub_wrap3" >
-        <h2>연회비</h2>
-        <img src = "img/h-util-arr1.png" alt = "icon" style=" float: right;">
-
+        <h2>연회비<img src = "img/h-util-arr1.png" alt = "icon" style="float: right; margin-top: -10px;"></h2>
+        
+        <div>
         <table>
             <tr><th>브랜드</th><th>옵션</th><th>기본</th><th>서비스</th><th>총회비</th></tr>
             <tr><td><img src = "img/brands1.png" alt = "brand"></td><td>일반</td><td>5천원</td><td>8천원</td><td><b>1만천원</b></td></tr>
             <tr><td><img src = "img/brands2.png" alt = "brand"></td><td>일반</td><td>5천원</td><td>8천원</td><td><b>1만천원</b></td></tr>
-        </table>
-    </div>
+        </table></div>
+        </div>
 
     <script>
         $(function(){
-            $("#sub_wrap3 > img").click(
+            $("#sub_wrap3 img").click(
             function(){
-             $("#sub_wrap3 > table").stop().slideToggle("fast");
+             $("#sub_wrap3 > div ").stop().slideToggle();
             });
         });
     </script>
@@ -175,16 +192,24 @@
 
     <!--할인 한 눈에 모아보세요 타이틀-->
     <div id = "sub_wrap5">
-        <h3>할인 한 눈에 모아 보기</h3>
+        <span ><img src ="img/nh_gray.png" alt = "company" style="margin: 10px;"></span>
+        <span ><img src ="img/lotte_gray.png" alt = "company" style="margin-top: 145px;"></span>
+        <span style="margin: 50px;"><img src ="img/samsung_gray.png" alt = "company"></span>
+        <span ><img src ="img/shinhan_gray.png" alt = "company" style="margin-left: 250px; margin-top: 150px;"></span>
+        <span ><img src ="img/hyundai_gray.png" alt = "company" style="margin-left: 330px;"></span>
+        <h3 style="z-index: 50; color: #404040;">뱅크 샌드위치만의 카드 할인 <br> 한 눈에 모아 보기</h3>
     </div>
 
     <!-- 할인 한 눈에 모아보는 슬라이드 아직 덜 됨 수정해야함-->
-    <div id="sub_wrap6">
+    <div id="sub_wrap6" >
         <div id = "leftWrap">
-            <div class ="content" style="color: #444444;">
+            <div class ="content" style="color: #575757;">
                 
-                <div style="background-color: #ededed; padding: 50px;">
-                    
+                <div style="background-color: rgb(250, 250, 250); padding: 50px;">
+                    <br>
+                    <br>
+                    <br>
+
                     <h3> 주유 할인</h3>
                     <img src  = "img/bg_cardLookBg4.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
                     <br>
@@ -212,6 +237,9 @@
                 </div>
         
                 <div style="background-color: #ffffff;  padding: 50px; ">
+                    <br>
+                    <br>
+                    <br>
         
                     <h3> 차량 할인</h3>
                     <img src  = "img/bg_cardLookBg107.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
@@ -232,7 +260,7 @@
                     <br>
                     <br>
                     <br>
-                    <div style="border: 1px solid #666; width: 90%; height: 150px; margin-top: 67px;">
+                    <div style="border: 1px solid #666; width: 90%; height: 150px; margin-top: 70px;">
                         <ul style="padding: 10px;">
                             <li>차량서비스 유의사항</li>
                             <li>-<b>차량서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
@@ -243,7 +271,10 @@
                 
                 </div>
         
-                <div style="background-color: #ededed; padding: 50px;" >
+                <div style="background-color: rgb(250, 250, 250); padding: 50px;" >
+                    <br>
+                    <br>
+                    <br>
         
                     <h3> 생활 할인</h3>
                     <img src  = "img/bg_cardLookBg194.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;"> 
@@ -263,7 +294,7 @@
                     </ul>
         
                     <br>
-                    <div style="border: 1px solid #666; width: 90%; height: 150px; margin-top: 90px;">
+                    <div style="border: 1px solid #666; width: 90%; height: 150px; margin-top: 110px;">
                         <ul style="padding: 15px;">
                             <li>생활서비스 유의사항</li>
                             <li>-<b>생활서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
@@ -279,6 +310,10 @@
                 </div>
         
                 <div style="background-color: #ffffff; padding: 50px;" >
+                    <br>
+                    <br>
+                    <br>
+
                     <h3> 영화 할인</h3>
                     <img src  = "img/bg_cardLookBg30.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
                     <br>
@@ -308,6 +343,7 @@
         
         
                 </div>
+                
             </div>  
         </div>
 
