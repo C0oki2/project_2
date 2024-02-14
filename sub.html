@@ -124,6 +124,8 @@
         $(function(){
             $("#sub_wrap3 img").click(
             function(){
+             $("#sub_wrap3 img").css('transform','translateX(0px) rotate(180deg)');
+             
              $("#sub_wrap3 > div ").stop().slideToggle();
             });
         });
@@ -160,56 +162,51 @@
     <!-- 할인 한 눈에 모아보는 슬라이드 아직 덜 됨 수정해야함-->
     <div id="sub_wrap6" >
         <div id = "leftWrap">
-            <div class ="content" style="color: #575757;">
+            <div class ="content">
                 
-                <div style="background-color: rgb(250, 250, 250); padding: 50px;">
+                <div id = "border_box">
                     <br>
                     <br>
                     <br>
 
+                    <sup> OPTION 1</sup>
                     <h3> 주유 할인</h3>
-                    <img src  = "img/bg_cardLookBg4.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
+                    <img src  = "img/bg_cardLookBg4.png" alt = "1" >
                     <br>
                  
-                    <ul style="line-height: 28px;"> 
-                    <li>직접 고른 주유소에서 10% 할인</li>
-                    <li>4개의 정유사 중 직접 고른 1개의 정유사 주유 이용금액 10% 결제일 할인</li>
-                    <li>정유사 미 선택 시 GS칼텍스가 적용됩니다.</li>
-                    <li>선택한 정유사는 본인/가족회원 동일하게 적용되며, 선택 및 변경은 본인 회원에 한하여 가능합니다.</li>
-                    <li>정유사 변경 후 다음날 이용거래부터 변겨오딘 정유사에 대해 할인 서비스가 적용됩니다.</li>
-                    <li>정유사는 신한카드 홈페이지/앱에서 '내카드관리', '선택형서비스 조회/변경/' 검색 또는 신한카드 고객센터를 통해 변경하실 수 있습니다.</li>
-                    <li><b>※정유사 선택은 1곳만 가능하며 연 1회 변경 가능합니다.※</b></li>
-                    <li><b>※휘발유, 등유, 경유에 대해서만 할인이 제공되며 LPG는 할인 제외됩니다.※</b></li>
+                    <ul> 
+                    <li><b>(1) 주유소</b> </li>
+                    <li>- 직접 고른 주유소에서 10% 할인</li>
+                    <li style="margin-left: 10px;">- 4개의 정유사 중 직접 고른 1개의 <br>정유사 주유 이용금액 10% 결제일 할인</li>
+                    <li><br>선택한 정유사는 본인/가족회원 동일하게 적용되며, 선택 및 변경은 본인 회원에 한하여 가능합니다.</li>
+            
                  </ul>
+                 <br>
+                 <br>
+                 <br>
         
                  
-                 <div style="border: 1px solid #666; width: 90%; height: 200px; margin-top: 50px;">
-                    <ul style="padding: 10px;">
-                        <li>주유 서비스 주의사항</li>
-                        <li>-<b>주유서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
-                        <li>-전월 이용금액에 따른 '주유서비스 월 이용금액 한도' 내에서 거래 순서에 따라 할인이 제공됩니다.</li>
-                        <li>-기타 할인 세부요건은 통합할인한도 탭에서 확인 바랍니다.</li>
-                    </ul>
+                 <div  id = "content_box">
+                   <img src = "img/ico_plus_b.png" alt = "icon_plus">
                  </div>
                 </div>
         
-                <div style="background-color: #ffffff;  padding: 50px; ">
+                <div id = "border_box">
                     <br>
                     <br>
                     <br>
         
+                    <sup> OPTION 2</sup>
                     <h3> 차량 할인</h3>
-                    <img src  = "img/bg_cardLookBg107.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
+                    <img src  = "img/bg_cardLookBg107.png" alt = "1">
                     <br>
         
                     <ul style="line-height: 28px;">
-                        <li>꼭 필요한 정비소와 주차장 10% 할인</li>
-                        <li><b>정비소</b></li>
+                        <li><b>(1) 정비소</b></li>
                         <li>-스피드메이트 이용금액 10% 결제일 할인</li>
-                        <li><b>※오프라인 현장 일반 결제만 가능하며, 온라인 결제 등은 적용 제외됩니다.</b></li>
-                        <li><b>주차장</b></li>
+                        <li><b>(2) 주차장</b></li>
                         <li>-전국 모든 주차장 10% 결제일 할인</li>
-                        <li><b>※신한카드 주차장 업종으로 등록된 가맹점에 한하여 제공됩니다.</b></li>
+                        <li><br>신한카드 주차장 업종으로 등록된 가맹점에 한하여 제공됩니다.</li>
         
                     </ul>
         
@@ -217,48 +214,39 @@
                     <br>
                     <br>
                     <br>
-                    <div style="border: 1px solid #666; width: 90%; height: 200px; margin-top: 70px;">
-                        <ul style="padding: 10px;">
-                            <li>차량서비스 유의사항</li>
-                            <li>-<b>차량서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
-                            <li>-전월 이용금액에 따른 '차량서비스 월 이용금액 한도' 내에서 거래 순서에 따라 할인이 제공됩니다.</li>
-                            <li>-기타 할인 세부요건은 통합할인한도 탭에서 확인 바랍니다.</li>
-                        </ul>
+                    
+                    <div  id = "content_box">
+                        <img src = "img/ico_plus_b.png" alt = "icon_plus">
                     </div>
-                
+
+
                 </div>
         
-                <div style="background-color: rgb(250, 250, 250); padding: 50px;" >
+                <div  id = "border_box" >
                     <br>
                     <br>
                     <br>
         
+                    <sup> OPTION 3</sup>
                     <h3> 생활 할인</h3>
-                    <img src  = "img/bg_cardLookBg194.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;"> 
+                    <img src  = "img/bg_cardLookBg194.png" alt = "1" > 
                     <br>
         
                     <ul style="line-height: 28px;">
-                        <li>생활서비스 5% 할인</li>
-                        <li><b>편의점</b></li>
+                        <li><b>(1) 편의점</b></li>
                         <li>-GS25, CU 5% 결제일 할인</li>
-                        <li><b>커피</b></li>
+                        <li><b>(2) 커피</b></li>
                         <li>-스타벅스, 이디야 5% 결제일 할인</li>
-                        <li><b>※상품권 구입, 선불카드 충전은 할인 제외됩니다.</b></li>
-                        <li><b>택시</b></li>
+                        <li><b>(3) 택시</b></li>
                         <li>-택시 5% 결제일 할인</li>
-                        <li><b>※오프라인 현장 일반 결제만 가능하며, 온라인 자동결제 등은 적용 제외됩니다.</b></li>
+                        <li><br> 오프라인 현장 일반 결제만 가능하며, 온라인 자동결제 등은 적용 제외됩니다.</li>
         
                     </ul>
         
                     <br>
-                    <div style="border: 1px solid #666; width: 90%; height: 200px; margin-top: 110px;">
-                        <ul style="padding: 15px;">
-                            <li>생활서비스 유의사항</li>
-                            <li>-<b>생활서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
-                            <li>-전월 이용금액에 따른 '생활서비스 월 이용금액 한도' 내에서 거래 순서에 따라 할인이 제공됩니다.</li>
-                            <li>-기타 할인 세부요건은 통합할인한도 탭에서 확인 바랍니다.</li>
-                        </ul>
-                </div>
+                    <div  id = "content_box">
+                        <img src = "img/ico_plus_b.png" alt = "icon_plus">
+                      </div>
                
         
             
@@ -266,36 +254,35 @@
            
                 </div>
         
-                <div style="background-color: #ffffff; padding: 50px;" >
+                <div  id = "border_box" >
                     <br>
                     <br>
                     <br>
 
+                    <sup> OPTION 4</sup>
                     <h3> 영화 할인</h3>
-                    <img src  = "img/bg_cardLookBg30.png" alt = "1" style="float: right; padding: 5px; margin-left: 10px;">
+                    <img src  = "img/bg_cardLookBg30.png" alt = "1" >
                     <br>
         
                     <ul style="line-height: 30px;">
-                        <li>영화서비스 5% 할인</li>
-                        <li><b>롯데시네마 일반관 5천원 현장 할인</b></li>
-                        <li>-롯데시네마 영화관 현장 및 롯데시네마 홈페이지, 모바일App 결제건에 한하여 제공됩니다.</li>
-                        <li>-롯데시네마 일반관 상영 영화의 온라인/현장 예매 시 월 제공횟수 한도 내 1일 1회에 한하여 할인 제공됩니다.</li>
-                        <li>-조조 영화도 할인 제공 가능합니다. <b>단, 3D 등 스페셜관 상영 영화는 제외됩니다.</b></li>
-                        <li>-온라인 예매 시 '할인 수단으로 신한카드 Deep Oil 할인을 선택' 하시거나 현장 예매 시 '신한카드 Deep Oil 할인을 요청'하셔야 이용 가능합니다.</li>
-                        <li><b>※타 할인과 중복 적용 불가합니다.</b></li>
-                    
+                        <li><b>(1) 영화관</b></li>
+                        <li>- 영화서비스 5% 할인</li>
+                        <li style="margin-left: 10px;"> - 롯데시네마 일반관 5천원 현장 할인</li>
+                        <br>
+                        <br>
+                        <li>온라인 예매 시 '할인 수단으로 신한카드 Deep Oil 할인을 선택' 하시거나 현장 예매 시 '신한카드 Deep Oil 할인을 요청'하셔야 이용 가능합니다.</li>
+
+                      
         
                     </ul>
         
+                    <br>
+                    <br>
+                    <br>
                     
-                    <div style="border: 1px solid #666; width: 90%; height: 200px; margin-top: 50px;">
-                        <ul style="padding: 10px;">
-                            <li>영화서비스 유의사항</li>
-                            <li>-<b>영화서비스는 신한카드 Deep Oil 전월 이용금액이 30만원 이상인 경우 제공됩니다.</b></li>
-                            <li>-전월 이용금액에 따른 '영화서비스 월 이용금액 한도' 내에서 거래 순서에 따라 할인이 제공됩니다.</li>
-                            <li>-기타 할인 세부요건은 통합할인한도 탭에서 확인 바랍니다.</li>
-                        </ul>
-                </div>
+                    <div  id = "content_box">
+                        <img src = "img/ico_plus_b.png" alt = "icon_plus">
+                      </div>
             
         
         
@@ -304,8 +291,8 @@
             </div>  
         </div>
 
-    </div>   
-       
+    </div>  
+
     <script>
         $(window).scroll(function(){
         
@@ -328,6 +315,104 @@
         
             });
     </script>
+
+
+    <div id = "boxWrap" style="z-index: 100; height: auto;">
+        <div id = "popup">
+            <img src = "img/x.png" id = "close" alt = "close">
+            <h2 style="text-align: center;">혜택 상세 보기</h2>
+            <div id = "popup_text">
+          
+            <div>
+               
+            <h3> 주유 할인</h3>
+                <br>
+                <ul > 
+                <li>직접 고른 주유소에서 10% 할인</li>
+                <li>4개의 정유사 중 직접 고른 1개의 정유사 <br>주유 이용금액 10% 결제일 할인</li>
+            
+                <li>선택한 정유사는 본인/가족회원 동일하게 적용되며,<br> 선택 및 변경은 본인 회원에 한하여 가능합니다.</li>
+                <li>정유사 변경 후 다음날 이용거래부터 <br>변경된 정유사에 대해 할인 서비스가 적용됩니다.</li>
+                <li>정유사는 신한카드 홈페이지/앱에서<br> '내카드관리', '선택형서비스 조회/변경/' 검색 또는 신한카드 고객센터를<br> 통해 변경하실 수 있습니다.</li>
+             
+                </ul>
+            </div>
+
+            <div>
+            <h3> 차량 할인</h3>              
+                <br>
+                <ul >
+                            <li>꼭 필요한 정비소와 주차장 10% 할인</li>
+                            <li><b>정비소</b></li>
+                            <li>-스피드메이트 이용금액 10% 결제일 할인</li>
+                            <li><b>※오프라인 현장 일반 결제만 가능하며, 온라인 결제 등은 적용 제외됩니다.</b></li>
+                            <li><b>주차장</b></li>
+                            <li>-전국 모든 주차장 10% 결제일 할인</li>
+                            <li><b>※신한카드 주차장 업종으로 등록된 가맹점에 한하여 제공됩니다.</b></li>
+            
+                </ul>
+            </div>
+
+            <div>
+            <h3> 생활 할인</h3>
+                <br>
+                <ul>
+                    <li>생활서비스 5% 할인</li>
+                    <li><b>편의점</b></li>
+                    <li>-GS25, CU 5% 결제일 할인</li>
+                    <li><b>커피</b></li>
+                    <li>-스타벅스, 이디야 5% 결제일 할인</li>
+                    <li><b>※상품권 구입, 선불카드 충전은 할인 제외됩니다.</b></li>
+                    <li><b>택시</b></li>
+                    <li>-택시 5% 결제일 할인</li>
+                    <li><b>※오프라인 현장 일반 결제만 가능하며, 온라인 자동결제 등은 적용 제외됩니다.</b></li>
+
+                </ul>
+            </div>
+
+            <div>
+            <h3> 영화 할인</h3>
+                <br>
+                <ul>
+                    <li>영화서비스 5% 할인</li>
+                    <li><b>롯데시네마 일반관 5천원 현장 할인</b></li>
+                    <li>-롯데시네마 영화관 현장 및 롯데시네마 홈페이지,<br> 모바일App 결제건에 한하여 제공됩니다.</li>
+                    <li>-롯데시네마 일반관 상영 영화의 온라인/현장 예매 시<br> 월 제공횟수 한도 내 1일 1회에 한하여 할인 제공됩니다.</li>
+                    <li>-조조 영화도 할인 제공 가능합니다. <b>단, 3D 등 스페셜관 상영 영화는 제외됩니다.</b></li>
+                    <li>-온라인 예매 시 '할인 수단으로 신한카드 Deep Oil 할인을 선택' 하시거나 현장 예매 시<br> '신한카드 Deep Oil 할인을 요청'하셔야 이용 가능합니다.</li>
+                    <li><b>※타 할인과 중복 적용 불가합니다.</b></li>
+                
+    
+                </ul>
+
+            </div>    
+
+
+
+
+        </div>
+
+   </div>
+    </div>
+
+   
+   <script>
+
+    $(function(){
+
+      $('#content_box > img').click(function(){
+        $('#boxWrap').fadeIn();
+
+      });
+
+      $('#close').click(function(){
+        $('#boxWrap').fadeOut();
+      });
+
+    });
+
+  </script>
+
 
 
  <!--footer... index html과 동일-->
