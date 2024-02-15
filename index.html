@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banksandwich</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="index_old.css"> -->
-    <meta charset="utf-8">
+    
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    
+    
+    
 
 
 </head>
@@ -36,16 +42,7 @@
 
     </header>
 
-    <script>
-        $(function(){
-            $(".a").click (function(){
-                $(".b").slideToggle();
-                
-            });
-        });
-    </script>
-    
-    
+
 
     <!--슬라이더-->
     <div id = "slidewrap">
@@ -64,36 +61,6 @@
 
     </div>
 
-    <!--슬라이더 부분 자바스크립트-->
-    <script>    
-    if (window.matchMedia("(max-width: 999px)").matches) { 
-
-        $('.prev').click(function(){
-        $('.slide li:last').prependTo('.slide');
-        $('.slide').css('margin-left','-100%');
-        $('.slide').stop().animate({marginLeft:0},800);});
-      
-        $('.next').click(function(){
-          $('.slide').stop().animate({marginLeft:'-100%'},800, function(){
-            $('.slide li:first').appendTo('.slide');
-            $('.slide').css({marginLeft:0}); });
-         });
-}else {
-    $('.prev').click(function(){
-        $('.slide li:last').prependTo('.slide');
-        $('.slide').css('margin-left',-1000);
-        $('.slide').stop().animate({marginLeft:0},800);});
-      
-        $('.next').click(function(){
-          $('.slide').stop().animate({marginLeft:-1000},800, function(){
-            $('.slide li:first').appendTo('.slide');
-            $('.slide').css({marginLeft:0}); });
-         });
-
-}
-
-      
- </script>
 
     <!--자주 사용하는 노란 메뉴 정렬-->
   
@@ -283,70 +250,6 @@
 
     </div>
 
-     
-<!--이순신 응용 부분-->
-<script>
-      
-    $(function() {
-        $("#article_b > div:first")
-        .click(function() {
-            $("#div1").show();
-            $("#div2").hide();
-            $("#div3").hide();
-               
-        });
-
-
-        $("#article_b > div:eq(1)").click(function() {
-            $("#div2").show();
-            $("#div1").hide();
-            $("#div3").hide();
-        });
-
-
-        $("#article_b > div:last").click(function() {
-            $("#div3").show();
-            $("#div1").hide();
-            $("#div2").hide();
-        });
-
-              
-
-
-    });
-
-
-    
-</script>
-
-
-    <!--카드 세 개 배너 -> 이거 메인 페이지 말고 서브 페이지에서 활용하기
-    <div id = "wrap1">
-        
-        <a href = "#" class = "box">
-            <div class = "photo" style = "background-image: url(img/black_card.png);"></div>
-            <br>
-            <h3>신한 #pay 카드</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
-
-        <a href = "#" class = "box">
-            <div class = "photo" style = "background-image: url(img/red_card.png);"></div>
-            <br>
-            <h3>Mr.Life 카드</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
-
-        <a href = "#" class = "box" >
-            <div class = "photo" style = "background-image: url(img/green_card.png);"></div>
-            <br>
-            <h3>NHCard vacation</h3>
-        <p>다양한 혜택을 직접 확인해 보세요.</p>
-        </a>
-
-    </div> -->
-
-
 
     <!--큰 폰 사진 있는 부분  -> 아직 반응형 적용 안 함-->
     <div id = wrap5>
@@ -448,6 +351,8 @@
         
         
     </div>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

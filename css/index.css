@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
 
 
-* {margin:0; font-family: "맑은 고딕"; box-sizing: border-box; }
+* {margin:0; font-family: "맑은 고딕"; box-sizing: border-box;   font-family: "Noto Sans KR", sans-serif;}
 
 ul,ol,li,a {
   list-style: none;
@@ -13,8 +13,8 @@ ul,ol,li,a {
 
 header { background-color:#fff; height:auto;}
 
-nav ul > li :hover {background-color: green;
-  padding: 10px; color: #fff; border-radius: 9px;}
+nav ul > li :hover {background-color: rgb(107, 255, 186);
+ color: #000000; border-radius: 9px; }
 
 .a { cursor: pointer;}
 
@@ -25,16 +25,18 @@ nav ul > li :hover {background-color: green;
 
 @media (max-width:999px){
 
-  header { width:100%; display:flex;  justify-content:space-between; align-items:center;  line-height:50px; padding: 10px 0px;}
+  header { width:100%; display:flex;  justify-content:space-between; align-items:center;  line-height:50px; padding: 20px;}
 
-  nav ul {display:flex; flex-direction:column; margin-top: -5px;}
+  nav ul {display:flex; flex-direction:column; margin-top: -5px; background-color: #f4f3f3;}
 
   nav ul li a {padding:25px; text-decoration:none; color:#666; display:block;}
 
   .a {display:block;}
 
-  .b {display:none; position: absolute; top:60px; left: 0px; width: 100%;}
+  .b {display:none; position: absolute; top:90px; left: 0px; width: 100%;}
   .b ul li a{display: block; width: 100%; line-height: 150%;}
+
+  nav ul li  {border-bottom:1px solid #969696;}
 
   }
 
@@ -56,7 +58,7 @@ nav ul > li :hover {background-color: green;
 
   }
 
-/*슬라이더 부분 아직 반응형 적용 안 함*/
+/*슬라이더 부분 */
 @media all and (max-width: 599px) {
   #slidewrap {
     width: 100%;
@@ -93,7 +95,7 @@ nav ul > li :hover {background-color: green;
     display: block;
     font-size: 38px;
     color: #fff;
-    line-height: 57px;
+    line-height: 43.5px;
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     height: 50px;
@@ -179,7 +181,7 @@ nav ul > li :hover {background-color: green;
     display: block;
     font-size: 38px;
     color: #fff;
-    line-height: 57px;
+    line-height: 43.5px;
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     height: 50px;
@@ -265,7 +267,7 @@ nav ul > li :hover {background-color: green;
         display: block;
         font-size: 38px;
         color: #fff;
-        line-height: 57px;
+        line-height: 43.5px;
         background: rgba(0, 0, 0, 0.6);
         cursor: pointer;
         height: 50px;
@@ -297,6 +299,7 @@ nav ul > li :hover {background-color: green;
         text-align: center;
         font-weight: bold;
         line-height: 50px;
+        white-space: nowrap;
 
       }
 
@@ -308,6 +311,7 @@ nav ul > li :hover {background-color: green;
         text-align: center;
         font-weight: bold;
         line-height: 50px;
+        white-space: nowrap;
 
         
       }
@@ -597,12 +601,12 @@ nav ul > li :hover {background-color: green;
     }
     
     #j {
-        background-image: url(img/jeonse-house.png);
+        background-image: url('img/apple.png');
         background-repeat: no-repeat;
-        width: 300px;
+        width: 100%;
         height: 300px;
         float: right;
-        background-position: center;
+      
         background-size: contain;
        
     
@@ -1323,6 +1327,7 @@ color: #fff;
         align-items: center;
         justify-content: flex-start;
         font-size: 11px;
+        padding: 0px 20px;
       }
 
 
@@ -1338,6 +1343,7 @@ color: #fff;
         align-items: center;
         justify-content: center;
         font-size: 14px;
+        padding: 0px 23px;
       }
 
 }

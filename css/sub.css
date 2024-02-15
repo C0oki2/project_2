@@ -61,37 +61,6 @@ nav ul > li :hover {background-color: rgb(107, 255, 186);
   }
 
 
-
-/*search 버튼*/
-/* #search_btn_div {
-    margin: 0 auto;
-    width: 1000px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#search_btn_div>button  {
-    width: 690px;
-    height: 60px;
-    border-radius: 9px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid green;
-    font-size: 20px;
-    text-align: left;
-    padding: 10px;
-    color: #666;
-}  
-
-#search_btn_div>button>div {
-    display: flex;
-    justify-content: space-between;
-}
- */
-
-
-
  /*카드 설명 부분*/
  
 @media all and (max-width: 599px) {
@@ -129,7 +98,7 @@ position: relative;}
 
 
 #sub_wrap1>div:nth-of-type(2) {
-    width: 120%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -164,19 +133,18 @@ position: relative;}
 } 
 
 
-#sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) {
+#benefits {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 16px;
     color: #282828; 
     padding: 40px 50px;
-    /* background-color: blue; */
-   
- 
-    
- 
 }
+
+
 
 
 #sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) > div {
@@ -232,7 +200,7 @@ position: relative;}
     flex-direction: column;
    justify-items: center;
    align-items: center;
- margin-top: 50px;
+
 position: relative;}
 
 #sub_wrap1>div:nth-of-type(1) {
@@ -268,18 +236,17 @@ position: relative;}
 #sub_wrap1>div:nth-of-type(2) >div:nth-of-type(1) {
    width: 100%;
     position: absolute;
-    top: -30%;
+    top: 0;
     left: 0;
-    padding: 10px 0px ;
+    height: 70px;
 
 }
 
 #title_1 {
     font-size: 30px;
     margin-left: 20px;
-    margin-top: 7%;
-    padding-top: 12%;
-    top: 40%;
+
+
 }
 
 #title_2 {
@@ -287,19 +254,16 @@ position: relative;}
     margin-left: 20px;
 } 
 
-
-#sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) {
-    display: flex;
+#benefits {
+    width: 100%;
+    margin: 0 auto;  
+      display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 16px;
     color: #282828; 
     padding: 40px 20px;
     /* background-color: blue; */
-   
- 
-    
- 
 }
 
 
@@ -330,9 +294,9 @@ position: relative;}
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 40%;
+    top: 15%;
     right: 0;
-    margin-top: 7%; 
+
     display: inline-block;
 
 
@@ -410,14 +374,18 @@ position: relative;}
 
 /*다른 주유소 10% 할인 부분*/
 
-#sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) {
-    display: flex;
+#benefits {
+    width: 1000px;
+    margin: 0 auto;
+        display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 5%;
     font-size: 20px;
     color: #282828;
+    width: 393px;
 }
+
 
 
 #sub_wrap1>div:nth-of-type(2) >div:nth-of-type(2) > div {
@@ -707,49 +675,52 @@ position: relative;}
 
     #sub_wrap5 {
         width: 100%;
+        height: 200px;
         display: flex;
         justify-content: center;
-        align-items: center;
         background-color: #fdfbfb;
         margin-top: 50px;
         position:relative;
+        font-size: 20px;
     
     }
     
-    #sub_wrap5 >span >img {width: 150px; opacity: 0.2;}
+    #sub_wrap5 >span >img {width: 100%; opacity: 0.2; overflow: hidden;}
     
     
     #sub_wrap5 h3 {
         text-align: center;
         color: #252525;
-   
+       margin: 4% auto;
        position: absolute;
         
     
-    } 
+    }    
         
 }
 
 @media all and (min-width: 600px) and (max-width: 999px) { 
 
+     
     #sub_wrap5 {
         width: 100%;
+        height: 200px;
         display: flex;
         justify-content: center;
-        align-items: center;
         background-color: #fdfbfb;
         margin-top: 50px;
         position:relative;
+        font-size: 20px;
     
     }
     
-    #sub_wrap5 >span >img {width: 150px; opacity: 0.2;}
+    #sub_wrap5 >span >img {width: 150px; opacity: 0.2; overflow: hidden;}
     
     
     #sub_wrap5 h3 {
         text-align: center;
         color: #252525;
-   
+       margin: 4% auto;
        position: absolute;
         
     
