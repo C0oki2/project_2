@@ -608,6 +608,7 @@ nav ul > li :hover {background-color: rgb(107, 255, 186);
         float: right;
       
         background-size: contain;
+        background-position: center;
        
     
     }
