@@ -19,6 +19,12 @@ $(function(){
     });
 });
 
+$(window).resize(function(){
+  if(window.innerWidth >= 768) {
+    $('.b').show();
+  }
+});
+
 /*연회비 */
 $(function(){
     $("#sub_wrap3 h2").click(

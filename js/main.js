@@ -6,6 +6,11 @@ $(function(){
     });
 });
 
+$(window).resize(function(){
+  if(window.innerWidth >= 768) {
+    $('.b').show();
+  }
+});
 
 
 /*슬라이더 부분 자바스크립트*/
