@@ -44,31 +44,17 @@ $('.prev').click(function(){
   
 
 /*이순신 응용 부분*/
-      
-$(function() {
-  $("#article_b > div:first")
-  .click(function() {
-      $("#div1").show();
-      $("#div2").hide();
-      $("#div3").hide();
-         
-  });
 
+$(function() {
+  $("#article_b > div:first").click(function() {
+    $("#div1").show().siblings('[id^="div"]').hide();
+  });
 
   $("#article_b > div:eq(1)").click(function() {
-      $("#div2").show();
-      $("#div1").hide();
-      $("#div3").hide();
+    $("#div2").show().siblings('[id^="div"]').hide();
   });
-
 
   $("#article_b > div:last").click(function() {
-      $("#div3").show();
-      $("#div1").hide();
-      $("#div2").hide();
+    $("#div3").show().siblings('[id^="div"]').hide();
   });
-
-        
-
-
 });
